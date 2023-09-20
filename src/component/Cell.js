@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cell = ({board, isDraw, winner, el, index, nextMove, colorToggle}) => {
+const Cell = ({isDraw, winner, el, index, nextMove, colorToggle}) => {
 const toggle = {
     color: el === 'X' ? 'blue' : colorToggle(el),
     backgroundColor: isDraw ? '#675436' : (winner && '#f1cb99')
